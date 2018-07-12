@@ -56,9 +56,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>BTC</h1>
+      <div className="container">
+        <h1>
+          Bitcoin Prices Over Time
+        </h1>
         <Line data={() => this.formatData()} />
+        <div className="d-flex flex-row-reverse">
+          <a href="https://www.coindesk.com/price/">
+            Powered by CoinDesk
+          </a>
+        </div>
       </div>
     );
   }
