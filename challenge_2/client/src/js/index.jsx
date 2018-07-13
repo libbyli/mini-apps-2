@@ -79,7 +79,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <h1>
-          Bitcoin Prices Over Time
+          Historical Bitcoin Prices
         </h1>
         <div className="row">
           <div className="col-4">
