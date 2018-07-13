@@ -1,49 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import App from './components/app';
+import configureStore from './redux/store/configureStore';
 import '../css/main.css';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const initialState = {};
+const store = configureStore(initialState);
 
-  createKeypad() {
-    return (
-      <table>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>10</td>
-          </tr>
-        </tbody>
-      </table>
-    )
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Bowling Scorecard</h1>
-        <div>
-          {this.createKeypad()}
-        </div>
-      </div>
-    );
-  };
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  (
+    <Provider store={store}>
+      <App />
+    </Provider>
+  ),
+  document.getElementById('app'),
+);
