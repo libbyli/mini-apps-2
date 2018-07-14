@@ -6,7 +6,7 @@ import configureStore from './store/configureStore';
 import '../css/main.css';
 
 const initialState = {
-  score: [],
+  score: 0,
 };
 const store = configureStore(initialState);
 

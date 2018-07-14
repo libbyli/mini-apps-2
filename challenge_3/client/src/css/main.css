@@ -1,8 +1,7 @@
-table, td {
+table {
   padding: 5px;
   border: 1px solid #000000;
 }
-
-td {
+button {
   padding: 10px;
 }
