@@ -1,10 +1,10 @@
 import React from 'react';
-import Keypad from './Keypad';
+import KeypadContainer from './../containers/KeypadContainer.jsx';
 
 const App = () => (
   <div>
   <h1>Bowling Scorecard</h1>
-    <Keypad />
+    <KeypadContainer />
   </div>
 );
 
