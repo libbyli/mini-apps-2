@@ -1,6 +1,6 @@
 import Redux from 'redux';
 
-const changeScore = (state = null, action) => {
+const score = (state = null, action) => {
   switch (action.type) {
     case 'CHANGE_SCORE':
       return action.score;
@@ -9,4 +9,4 @@ const changeScore = (state = null, action) => {
   }
 };
 
-export default changeScore;
+export default score;

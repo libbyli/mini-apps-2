@@ -19,7 +19,9 @@ const Keypad = () => (
         <td>9</td>
       </tr>
       <tr>
+        <td />
         <td>10</td>
+        <td />
       </tr>
     </tbody>
   </table>

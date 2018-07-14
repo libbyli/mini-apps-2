@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import App from './components/app';
-import configureStore from './redux/store/configureStore';
+import App from './components/App';
+import configureStore from './store/configureStore';
 import '../css/main.css';
 
-const initialState = {};
+const initialState = {
+  score: [],
+};
 const store = configureStore(initialState);
 
 ReactDOM.render(
